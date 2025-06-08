@@ -70,6 +70,7 @@ src/
   ├── app/          # Páginas, layouts e estilos globais
   ├── components/   # Componentes React reutilizáveis
   ├── contexts/     # Definição dos Contextos
+  ├── layouts/      # Componente de estrutura de página
   ├── lib/          # Utilitário para integração do Styled Components (SSR)
   ├── providers/    # Componentes Provedores de Contexto
 ```
