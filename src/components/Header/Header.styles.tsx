@@ -28,7 +28,7 @@ export const LogoContainer = styled.div`
   flex-direction: column;
 `;
 
-export const StyledLink = styled.a`
+export const LogoText = styled.h1`
   font-size: 1.25rem;
   font-weight: 700;
   margin: 0;
@@ -38,7 +38,6 @@ export const StyledLink = styled.a`
   background-clip: text;
   letter-spacing: -0.02em;
   text-decoration: none;
-  cursor: pointer;
 
   @media (min-width: 768px) {
     font-size: 2rem;
@@ -81,7 +80,7 @@ export const Nav = styled.nav`
   }
 `;
 
-export const NavLink = styled.a`
+export const Navtext = styled.p`
   color: white;
   font-weight: 500;
   position: relative;
@@ -89,7 +88,6 @@ export const NavLink = styled.a`
   padding: 0.5rem 1rem;
   border-radius: 6px;
   transition: all 0.3s ease;
-  cursor: pointer;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.15);
@@ -183,7 +181,7 @@ export const MobileMenu = styled.div<{ $isOpen: boolean }>`
   }
 `;
 
-export const MobileNavLink = styled.a`
+export const MobileNavText = styled.p`
   font-size: 1rem;
   text-transform: uppercase;
   padding: 1rem 0;
@@ -194,7 +192,6 @@ export const MobileNavLink = styled.a`
   transition: color 0.3s linear;
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  cursor: pointer;
 
   &:last-child {
     border-bottom: none;
