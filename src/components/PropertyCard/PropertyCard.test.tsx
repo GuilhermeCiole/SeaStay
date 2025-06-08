@@ -5,9 +5,10 @@ import { Property } from '../../contexts/property.types';
 
 jest.mock('next/image', () => ({
   __esModule: true,
-  default: (props: Property) => {
-    // eslint-disable-next-line @next/next/no-img-element
-    return <img {...props} alt={''} />;
+  default: (props: any) => {
+    const { fill, priority, ...rest } = props;
+    
+    return <img {...rest} />;
   },
 }));
 
