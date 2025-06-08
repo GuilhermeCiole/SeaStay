@@ -3,13 +3,17 @@
 import React, { useState } from 'react';
 import { useProperty } from '@/contexts/PropertyContext';
 import { Input, Select } from '../styled/StyledComponents';
-import { Collapsible, CollapsibleTrigger } from '@/components/styled/collapsible';
+import * as CollapsiblePrimitive from '@radix-ui/react-collapsible';
 import { FilterValue } from './Filters.types';
 import * as S from './Filters.styles';
 
 export const Filters: React.FC = () => {
   const { state, dispatch } = useProperty();
   const [showMore, setShowMore] = useState(false);
+
+  const Collapsible = CollapsiblePrimitive.Root;
+
+  const CollapsibleTrigger = CollapsiblePrimitive.CollapsibleTrigger;
 
   const handleFilterChange = (key: string, value: FilterValue) => {
     dispatch({
