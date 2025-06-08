@@ -100,7 +100,14 @@ export const PropertyDetail: React.FC<PropertyDetailProps> = ({ id }) => {
         </S.PropertyHeader>
 
         <S.PropertyImageContainer>
-          <Image src={property.imageUrl} alt={property.title} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" priority/>
+          <Image
+            src={property.imageUrl}
+            alt={property.title}
+            fill
+            style={{ objectFit: 'cover' }}
+            sizes="(max-width: 768px) 100vw, 33vw"
+            priority
+          />
         </S.PropertyImageContainer>
 
         <S.PropertyGrid>

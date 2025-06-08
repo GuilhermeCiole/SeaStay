@@ -13,7 +13,14 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({ property, onClick })
   return (
     <S.StyledCard onClick={onClick}>
       <S.PropertyImage $imageUrl={getImageToDisplay()}>
-        <Image src={getImageToDisplay()} alt={property.title} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" priority/>
+        <Image
+          src={getImageToDisplay()}
+          alt={property.title}
+          fill
+          style={{ objectFit: 'cover' }}
+          sizes="(max-width: 768px) 100vw, 33vw"
+          priority
+        />
         <S.AvailabilityBadge $available={property.available}>
           {property.available ? 'Disponível' : 'Indisponível'}
         </S.AvailabilityBadge>
