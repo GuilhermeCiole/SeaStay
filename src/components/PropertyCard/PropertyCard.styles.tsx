@@ -6,7 +6,7 @@ import { StyledPropertyProps } from './PropertyCard.types';
 
 export const PropertyImage = styled.div<StyledPropertyProps>`
   height: 180px;
-  background-image: url(${props => props.imageUrl});
+  background-image: url(${props => props.$imageUrl});
   background-size: cover;
   background-position: center;
   position: relative;
@@ -27,7 +27,7 @@ export const AvailabilityBadge = styled.div<StyledPropertyProps>`
   border-radius: 20px;
   font-size: 0.7rem;
   font-weight: 600;
-  background: ${props => (props.available ? '#10b981' : '#ef4444')};
+  background: ${props => (props.$available ? '#10b981' : '#ef4444')};
   color: white;
 
   @media (min-width: 768px) {
