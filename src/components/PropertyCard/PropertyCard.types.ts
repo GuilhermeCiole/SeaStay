@@ -6,6 +6,6 @@ export interface PropertyCardProps {
 }
 
 export interface StyledPropertyProps {
-  imageUrl?: string;
-  available?: boolean;
+  $imageUrl?: string;
+  $available?: boolean;
 }

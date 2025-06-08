@@ -94,13 +94,13 @@ export const PropertyDetail: React.FC<PropertyDetailProps> = ({ id }) => {
           <S.PropertyLocation>
             {property.city}, {property.state}, {property.country}
           </S.PropertyLocation>
-          <S.PropertyAvailability available={property.available}>
+          <S.PropertyAvailability $available={property.available}>
             {property.available ? 'Disponível' : 'Indisponível'}
           </S.PropertyAvailability>
         </S.PropertyHeader>
 
         <S.PropertyImageContainer>
-          <Image src={property.imageUrl} alt={property.title} fill style={{ objectFit: 'cover' }} />
+          <Image src={property.imageUrl} alt={property.title} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" priority/>
         </S.PropertyImageContainer>
 
         <S.PropertyGrid>

@@ -182,14 +182,14 @@ export const EmptyMessage = styled.div`
   grid-column: 1 / -1;
 `;
 
-export const PropertyAvailability = styled.div<{ available: boolean }>`
+export const PropertyAvailability = styled.div<{ $available: boolean }>`
   display: inline-block;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
   font-size: 0.9rem;
   margin-top: 0.5rem;
-  background-color: ${props => (props.available ? '#dcfce7' : '#fee2e2')};
-  color: ${props => (props.available ? '#15803d' : '#b91c1c')};
+  background-color: ${props => (props.$available ? '#dcfce7' : '#fee2e2')};
+  color: ${props => (props.$available ? '#15803d' : '#b91c1c')};
   font-weight: 500;
 `;
 
